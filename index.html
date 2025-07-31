@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Análise RSI de Criptoativos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #f0f0f0;
+      padding: 20px;
+    }
+    input, button {
+      margin: 10px;
+      padding: 10px;
+      font-size: 16px;
+    }
+    #resultado {
+      margin-top: 30px;
+      font-size: 20px;
+      font-weight: bold;
+      padding: 20px;
+      border-radius: 10px;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <h1>Análise RSI de Criptoativos</h1>
+  <input type="text" id="coin" placeholder="Digite o símbolo (ex: BTC, ETH)" />
+  <button onclick="analisar()">Analisar</button>
+  <div id="resultado"></div>
+
+  <!-- Importa os tokens dinamicamente -->
+  <script src="tokens.js"></script>
+  <!-- Script principal da lógica -->
+  <script src="script.js"></script>
+</body>
+</html>
